@@ -16,7 +16,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-public class UserControllerTest {
+class UserControllerTest {
 
     @InjectMocks
     private UserController userController;
@@ -30,7 +30,7 @@ public class UserControllerTest {
     }
 
     @Test
-    public void testGetAllUsers() {
+    void testGetAllUsers() {
         // Créez une liste d'utilisateurs de test
         List<User> users = new ArrayList<>();
         users.add(new User(11, "John", "Doe","jjj",23651,"man","ekksss","oird"));
