@@ -12,18 +12,16 @@ public class User {
     private int age;
     private String firstName;
     private String lastName;
-    private String email;
     private long phoneNumber;
     private String gender;
     private String occupation;
 
     private String address;
 
-    public User(int age, String firstName, String lastName, String email, long phoneNumber, String gender, String address, String occupation) {
+    public User(int age, String firstName, String lastName, long phoneNumber, String gender, String address, String occupation) {
         this.age = age;
         this.firstName = firstName;
         this.lastName=lastName;
-        this.email = email;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
         this.address = address;
@@ -75,14 +73,6 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public long getPhoneNumber() {

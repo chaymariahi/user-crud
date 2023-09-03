@@ -33,8 +33,8 @@ class UserControllerTest {
     void testGetAllUsers() {
         // Créez une liste d'utilisateurs de test
         List<User> users = new ArrayList<>();
-        users.add(new User(11, "John", "Doe","jjj",23651,"man","ekksss","oird"));
-        users.add(new User(12, "chayma", "riahi","qqq",6665,"man","mmlp","oird"));
+        users.add(new User(11, "John", "Doe",23651,"man","ekksss","oird"));
+        users.add(new User(12, "chayma", "riahi",6665,"man","mmlp","oird"));
 
         // Simulez le comportement du service pour renvoyer la liste d'utilisateurs
         when(userService.findAll()).thenReturn(users);
