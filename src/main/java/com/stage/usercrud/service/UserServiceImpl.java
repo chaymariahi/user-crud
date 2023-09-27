@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService{
 
     public User findById(long id) {
         Optional<User> userOptional = userRepository.findById(id);
-        return userOptional.orElse(null); // Ou gérer le cas où l'utilisateur n'est pas trouvé
+        return userOptional.orElse(null);
     }
 
 

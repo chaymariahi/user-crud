@@ -11,7 +11,7 @@ class UserTest {
 
     @BeforeEach
     public void setUp() {
-        user = new User(25, "John", "Doe", 34567890, "Male", "123 Main St", "Engineer");
+        user = new User(25, "John", "Doe", 34567890, "Male", "@", "Engineer");
     }
 
     @Test
@@ -70,14 +70,14 @@ class UserTest {
     }
 
     @Test
-    void testGetAddress() {
-        assertEquals("123 Main St", user.getAddress());
+    void testGetEmail() {
+        assertEquals("@", user.getEmail());
     }
 
     @Test
-    void testSetAddress() {
-        user.setAddress("456 Elm St");
-        assertEquals("456 Elm St", user.getAddress());
+    void testSetEmail() {
+        user.setEmail("@");
+        assertEquals("@", user.getEmail());
     }
 
     @Test

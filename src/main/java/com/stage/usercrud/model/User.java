@@ -14,17 +14,17 @@ public class User {
     private String lastName;
     private long phoneNumber;
     private String gender;
+    private String email;
     private String occupation;
 
-    private String address;
 
-    public User(int age, String firstName, String lastName, long phoneNumber, String gender, String address, String occupation) {
+    public User(int age, String firstName, String lastName, long phoneNumber, String gender, String email, String occupation) {
         this.age = age;
         this.firstName = firstName;
         this.lastName=lastName;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
-        this.address = address;
+        this.email = email;
         this.occupation=occupation;
     }
     public User(){
@@ -45,12 +45,12 @@ public class User {
     public void setOccupation(String occupation) {
         this.occupation = occupation;
     }
-    public String getAddress() {
-        return address;
+    public String getEmail() {
+        return email;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setEmail(String email) {
+        this.email = email;
     }
     public long getId() {
         return id;
